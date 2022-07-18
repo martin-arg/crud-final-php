@@ -16,4 +16,3 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </main>
-{% include 'includes/footer.html' %}

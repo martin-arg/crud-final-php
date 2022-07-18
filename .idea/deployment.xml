@@ -5,7 +5,7 @@
       <paths name="Apache">
         <serverdata>
           <mappings>
-            <mapping deploy="php" local="$PROJECT_DIR$" web="/php" />
+            <mapping deploy="/php" local="$PROJECT_DIR$" web="/php" />
           </mappings>
         </serverdata>
       </paths>
