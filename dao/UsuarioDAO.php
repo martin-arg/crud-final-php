@@ -1,16 +1,34 @@
 <?php
-
-class UsuarioDAO {
+session_start();
+class UsuarioDAO
+{
     public function validarUsuarioYPass($usuario, $clave) {
         require_once("../dataBase/ConexionDB.php");
-
-        $conexionDB = new ConexionDB("localhost","root","","clubsocial");
-        $conexionDB->conectar(); //conecta php con la base de datos MySql
+        require_once("../model/Usuario.php");
+        $conexionDB = new ConexionDB("localhost", "root", "", "clubsocial");
+        $conexionDB->conectar();
 
         $sql = "SELECT * FROM usuarios WHERE usuario = '$usuario' AND clave = '$clave'";
-        $conexionDB->ejecutar($sql);
+        $result = $conexionDB->ejecutar($sql);
 
-        return $conexionDB->cantFilas() > 0;
+        $existeUsuYPass = $conexionDB->cantFilas() > 0;
+        if ($existeUsuYPass) {
+            $usu = $result->fetch_assoc();
+//            $usuObj = new Usuario($usu["id"], $usu["usuario"], $usu["clave"], $usu["rol"], $usu["nombre"], $usu["apellido)"]);
+
+            $_SESSION['nombre'] = $usu['nombre'];
+
+
+
+            return true;
+        } else {
+            return false;
+        }
     }
+
+
+
+
+
 
 }

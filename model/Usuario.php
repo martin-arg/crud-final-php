@@ -10,6 +10,25 @@ class Usuario
     private $apellido;
 
     /**
+     * @param $id
+     * @param $usuario
+     * @param $clave
+     * @param $rol
+     * @param $nombre
+     * @param $apellido
+     */
+    public function __construct($id, $usuario, $clave, $rol, $nombre, $apellido)
+    {
+        $this->id = $id;
+        $this->usuario = $usuario;
+        $this->clave = $clave;
+        $this->rol = $rol;
+        $this->nombre = $nombre;
+        $this->apellido = $apellido;
+    }
+
+
+    /**
      * @return mixed
      */
     public function getId()
