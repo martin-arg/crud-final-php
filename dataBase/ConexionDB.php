@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 class ConexionDB {
     private $host;
@@ -30,7 +30,7 @@ class ConexionDB {
     }
 
     /**
-     * Ejecuta la query recibida con el
+     * Ejecuta la query recibida con el 
      * parámetro $sql.
      * Devuelve el resultado
      */
@@ -40,7 +40,7 @@ class ConexionDB {
 
     /**
      * Devuelve la cantidad de filas
-     * que arrojó la última consulta a la
+     * que arrojó la última consulta a la 
      * conexión.
      */
     public function cantFilas() {

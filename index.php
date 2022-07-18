@@ -5,32 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Centro Cultural</title>
-    <link rel="icon" type="image/x-icon" href="./img/icono.webp">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="view/img/icono.webp">
+    <link rel="stylesheet" href="./view/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Centro Cultural</title>
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="./img/icono.svg" >
-        <nav>
-                
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="instalaciones.html">Instalaciones</a></li>
-                <li><a href="contacto.html">Contactenos</a></li>
-            </ul>
-        </nav>
-        
-    
-    </header>
-
+<?php
+    require("./view/partials/header.php")
+?>
     <main>
-        <img src="./img/comunidad.webp" alt="">
+        <img src="view/img/comunidad.webp" alt="">
         <section>
             
             <h1>¿Quienes Somos?</h1>
@@ -61,21 +49,10 @@
         </section>
 
     </main>
-    <footer>
-        <br>
-        <nav>
-            <a href="https://www.facebook.com">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com">
-                <i class="fa-brands fa-twitter "></i>
-            </a>
-        </nav>
-        <p>Derechos reservados 2022</p>
-        <br>
 
-    </footer>
-    <script src="./js/main.js"></script>
+<?php
+    require("view/partials/footer.php")
+?>
 </body>
 
 </html>

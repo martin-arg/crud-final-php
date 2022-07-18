@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php
+require "partials/head.php"
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+?>
     <title>contactanos</title>
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="./img/icono.svg">
-        <nav>
-
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="instalaciones.html">Instalaciones</a></li>
-                <li><a href="contacto.html">Contactenos</a></li>
-            </ul>
-        </nav>
-
-
-    </header>
+<?php
+require "partials/header.php"
+?>
     <main>
         <h1>contactanos</h1>
         <section class="formulario">
@@ -67,7 +54,7 @@
 
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
