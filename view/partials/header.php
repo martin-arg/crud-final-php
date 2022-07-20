@@ -18,6 +18,7 @@ session_start()
             } else  {
                 $nombre = $_SESSION['nombre'];
                 echo "<li><span>Bienvenido $nombre</span></li>";
+                echo "<li><a href='./panel.php'>Panel</a></li>";
                 echo '<li><a href="../controller/logout.php">Logout</a></li>';
             }
             ?>

@@ -11,7 +11,7 @@ $loginValido = $usuarioDAO->validarUsuarioYPass($usu, $pass);
 if ($loginValido) {
     $_SESSION['User'] = $usu;
 
-    header("Location: ../view/index.php");
+    header("Location: ../view/panel.php");
     exit;
 } else {
     header("Location: ../view/loginError.html");

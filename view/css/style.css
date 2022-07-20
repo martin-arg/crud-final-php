@@ -43,7 +43,9 @@ header {
     align-items: center;
 }
 
-
+#nav {
+    background-color: rgb(28, 40, 51);
+}
 
 .logo {
 
@@ -115,12 +117,12 @@ a:hover {
     display: flex;
     justify-content: space-around;
     padding-bottom: 2vw;
-    
+
 }
 label {
-   padding-right: 0px;
-   width: 25vw;
-   
+    padding-right: 0px;
+    width: 25vw;
+
 
 }
 #mensaje {
@@ -128,7 +130,7 @@ label {
 
 }
 input {
-width: 25vw;
+    width: 25vw;
 
 }
 .card {
@@ -140,7 +142,7 @@ width: 25vw;
 
 .card img {
     width: 100%;
-    object-fit: scale-down;   
+    object-fit: scale-down;
 
 }
 
@@ -188,7 +190,7 @@ width: 25vw;
         background-color: white;
         width: 20vw;
         height: auto;
-        
+
     }
 
     .card img {
@@ -209,8 +211,8 @@ width: 25vw;
         font-size: x-small;
         line-height: 2vw;
         max-width: 100%;
-        
-        
+
+
     }
 
     h1 {
@@ -225,28 +227,28 @@ width: 25vw;
         margin-top: 3vw;
         margin-bottom: 3vw;
         width: 100%;
-        
+
     }
 
     p {
         line-height: 3vw;
-        font-size: 2vw;     
-        
+        font-size: 2vw;
+
     }
     label {
         padding-right: 0px;
         width: 10vw;
-        
-     
-     }
-     #mensaje {
-         width: 15vw;
-     
-     }
-     input {
-     width: 15vw;
-     
-     }
+
+
+    }
+    #mensaje {
+        width: 15vw;
+
+    }
+    input {
+        width: 15vw;
+
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -322,15 +324,17 @@ width: 25vw;
         padding-right: 0px;
         width: 7vw;
         font-size: 1vw;
-        
-     
-     }
-     #mensaje {
-         width: 7vw;
-     
-     }
-     input {
-     width: 7vw;
-     
-     }
+
+
+    }
+    #mensaje {
+        width: 7vw;
+
+    }
+    input {
+        width: 7vw;
+
+    }
+
+
 }

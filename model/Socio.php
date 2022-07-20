@@ -31,7 +31,7 @@ class Socio {
     /**
      * @param mixed $socioID
      */
-    public function setSocioID($socioID)
+    public function setSocioID($socioID): void
     {
         $this->socioID = $socioID;
     }
@@ -47,7 +47,7 @@ class Socio {
     /**
      * @param mixed $name
      */
-    public function setName($name)
+    public function setName($name): void
     {
         $this->name = $name;
     }
@@ -63,7 +63,7 @@ class Socio {
     /**
      * @param mixed $dni
      */
-    public function setDni($dni)
+    public function setDni($dni): void
     {
         $this->dni = $dni;
     }
@@ -79,7 +79,7 @@ class Socio {
     /**
      * @param mixed $email
      */
-    public function setEmail($email)
+    public function setEmail($email): void
     {
         $this->email = $email;
     }
