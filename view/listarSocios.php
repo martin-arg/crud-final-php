@@ -31,7 +31,6 @@ include("./partials/header.php")
         foreach ($listaSocios as $socio) {
         ?>
         <tr class="table-warning">
-<!--            <td>--><?php //echo $socio->getSocioID();?><!--</td>-->
             <td><?php echo $socio->getName();?></td>
             <td><?php echo $socio->getDni();?></td>
             <td><?php echo $socio->getEmail();?></td>

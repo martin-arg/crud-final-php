@@ -12,6 +12,6 @@
         <a class="nav-link" href="./listarClases.php">Listar Clases</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/listarusuarios">Listar Usuarios</a>
+        <a class="nav-link" href="./listarUsuarios.php">Listar Usuarios</a>
     </li>
 </ul>

@@ -8,6 +8,10 @@ include("./partials/header.php")
 ?>
 
 <main>
+    <?php
+    require "./partials/panel.php"
+
+    ?>
 <form class="row gy-2 gx-3 align-items-center" action="../controller/funcCrearSocio.php" method="post">
   <div class="col-auto">
     <label class="visually-hidden" for="nombre">Nombre</label>

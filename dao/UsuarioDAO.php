@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 class UsuarioDAO
 {
     public function validarUsuarioYPass($usuario, $clave) {
@@ -24,6 +24,25 @@ class UsuarioDAO
         } else {
             return false;
         }
+    }
+
+    public function listarUsuarios() {
+        require_once("../dataBase/ConexionDB.php");
+        require_once("../model/Usuario.php");
+
+        $conexionDB = new ConexionDB("localhost","root", "", "clubsocial");
+        $conexionDB->conectar();
+
+        $sql="SELECT * FROM usuarios";
+        $result = $conexionDB->ejecutar($sql);
+
+        while ($usu = $result->fetch_assoc()) {
+            $usuObj = new Usuario($usu["usuarioID"], $usu["usuario"], $usu["clave"],$usu["rol"],$usu["nombre"],$usu["apellido"]);
+
+            $listaUsu[] = $usuObj;
+        }
+
+        return $listaUsu;
     }
 
 
