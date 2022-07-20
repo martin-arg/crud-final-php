@@ -21,6 +21,7 @@ include("./partials/header.php")
             <th>Modificar</th>
             <th>Borrar</th>
         </tr>
+        </thead>
         <tbody class="table-group-divider">
         <?php
         require_once ("../dao/SocioDAO.php");
@@ -42,7 +43,7 @@ include("./partials/header.php")
         ?>
 
         </tbody>
-        </thead>
+
     </table>
 
 

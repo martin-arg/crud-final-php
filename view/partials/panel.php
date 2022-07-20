@@ -6,10 +6,10 @@
         <a class="nav-link" href="./crearSocio.php">Crear Socios</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/listaractividades">Listar Actividades</a>
+        <a class="nav-link" href="./listarActividades.php">Listar Actividades</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="/listarclases">Listar Clases</a>
+        <a class="nav-link" href="./listarClases.php">Listar Clases</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="/listarusuarios">Listar Usuarios</a>
